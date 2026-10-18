@@ -1,0 +1,47 @@
+{
+  "name": "nutm-learn-backend",
+  "version": "1.0.0",
+  "description": "Enterprise Backend for NUTM Learn LMS",
+  "main": "src/app/page.tsx",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "prisma generate && next build",
+    "start": "next start -p 3001",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy",
+    "prisma:push": "prisma db push",
+    "seed:admin": "tsx src/scripts/seed-admin.ts"
+  },
+  "keywords": [
+    "lms",
+    "nutm",
+    "education",
+    "backend",
+    "microsoft-entra"
+  ],
+  "author": "NUTM IT & Engineering",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@azure/msal-node": "^7.1.0",
+    "@prisma/client": "^6.19.3",
+    "cookie": "^2.0.1",
+    "jose": "^6.2.12",
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/cookie": "^1.0.0",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "prisma": "^7.10.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}
